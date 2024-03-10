@@ -11,20 +11,21 @@ import { cn } from '@/utils/cn';
 import Pipey from '@/assets/pipey.jpg';
 import ChrisKin from '@/assets/ChrisKin.jpg';
 import LogicForte from '@/assets/Logic-Forte.jpg';
-import DeveloperCard from "@/components/DeveloperCard";
+import DeveloperCard from '@/components/DeveloperCard';
 
 export default function Home() {
   const memberCount = 109;
-  const exampleDev={
-      avatar: "https://sgf.dev/media/o4nhslxo/npadgett.jpg?width=800&rnd=133294228088870000",
-      name: "Nathanael Padgett",
-      location: "Springfield,  MO",
-      bio: "bob",
-      skills: [],
-      createdAt: new Date,
-      username: "npadgett",
-      social: " https://nathanaelpadgett.com",
-  }
+  const exampleDev = {
+    avatar:
+      'https://sgf.dev/media/o4nhslxo/npadgett.jpg?width=800&rnd=133294228088870000',
+    name: 'Nathanael Padgett',
+    location: 'Springfield,  MO',
+    bio: 'bob',
+    skills: [],
+    createdAt: new Date(),
+    username: 'npadgett',
+    social: ' https://nathanaelpadgett.com',
+  };
   return (
     <div className='flex-1'>
       <section className='relative pb-32 pt-11 before:-top-8 before:left-0 before:h-8 before:w-full before:rounded-3xl before:bg-white'>
@@ -50,8 +51,8 @@ export default function Home() {
           </Link>
           <div className='flex overflow-hidden'>
             <DirectoryCard memberCount={memberCount} />
-              <DeveloperCard developer={exampleDev}></DeveloperCard>
-              {/* Profile cards go here */}
+            <DeveloperCard developer={exampleDev}></DeveloperCard>
+            {/* Profile cards go here */}
           </div>
         </div>
       </section>
@@ -148,9 +149,9 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className='min-h-[353px] bg-[url(/circuit_graphic.svg)] bg-[70vw_center] bg-no-repeat pb-24 pt-36'>
-        <div className='relative mx-auto px-8'>
-          <div className='max-w-[65%] xl:max-w-[43%]'>
+      <section className='relative flex min-h-[353px] flex-col pb-24 pt-36 md:static md:flex-row md:items-start md:justify-between md:gap-x-8'>
+        <div className='relative order-2 max-w-[1032px] px-8 md:order-1'>
+          <div className=' '>
             <h3 className='text-4xl font-bold text-foreground'>
               Educating, inspiring and supporting developers, agencies and
               professionals in the Greater Springfield, MO area.
@@ -189,6 +190,12 @@ export default function Home() {
             </p>
           </div>
         </div>
+
+        <img
+          src='/circuit_graphic.svg'
+          alt='Circuit Graphic'
+          className='absolute -top-[70px] right-[calc(9%+1vw)] -z-10 h-[180px] w-full scale-[1.20] object-cover object-right-bottom md:static md:order-2 md:min-h-[257px] md:w-[600px] md:transform-none md:object-contain md:object-right lg:min-h-[353px]'
+        />
       </section>
     </div>
   );
