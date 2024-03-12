@@ -154,7 +154,7 @@ export default function Home() {
           'relative pt-[153px]',
           'after:bg-120% after:absolute after:left-0 after:top-[-23px] after:z-[-1] after:h-[180px] after:w-full after:bg-[url(/circuit_graphic.svg)] after:bg-right-bottom after:bg-no-repeat after:content-[""]',
           'md:after:absolute md:after:left-auto md:after:top-auto md:after:z-auto md:after:h-auto md:after:w-auto md:after:bg-none md:after:content-[""]',
-          'md:min-h-[353px] md:bg-[url(/circuit_graphic.svg)] md:bg-[70vw_center] md:bg-no-repeat md:pb-24 md:pt-36',
+          'md:relative md:min-h-[353px] md:bg-[url(/circuit_graphic.svg)] md:bg-[65vw_80%] md:bg-no-repeat md:pb-24 md:pt-36 xl:bg-[right] ',
         )}
       >
         <div className='relative mx-auto px-8'>
